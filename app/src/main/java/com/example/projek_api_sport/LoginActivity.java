@@ -3,8 +3,6 @@ package com.example.projek_api_sport;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
@@ -14,8 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.projek_api_sport.VIew.Activity.MainActivity;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
@@ -66,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                         Snackbar.make(buttonLogin,"Login Berhasil !",Snackbar.LENGTH_SHORT).show();
 
                         //User berhasil login dan memunculkan home
-                        Intent intent           =   new Intent(LoginActivity.this,MainActivity.class);
+                        Intent intent           =   new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                     }

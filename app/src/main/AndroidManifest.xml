@@ -24,7 +24,7 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".VIew.Activity.MainActivity"
             android:label="Home Screen"
             android:theme="@style/AppTheme.NoActionBar"/>
 
