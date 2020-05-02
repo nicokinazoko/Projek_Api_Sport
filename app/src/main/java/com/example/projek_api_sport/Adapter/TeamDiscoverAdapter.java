@@ -46,7 +46,11 @@ public class TeamDiscoverAdapter extends RecyclerView.Adapter<TeamDiscoverAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Glide.with(context).load(teamsDiscoverResultItems.get(position).getStrTeamBadge()).into(holder.imageViewThumbnail);
+        Glide.with(context)
+                .load(teamsDiscoverResultItems
+                        .get(position)
+                        .getStrTeamBadge())
+                .into(holder.imageViewThumbnail);
 
         holder.textViewTeamTitle.setText(teamsDiscoverResultItems.get(position).getStrTeam().toString());
 
@@ -65,6 +69,7 @@ public class TeamDiscoverAdapter extends RecyclerView.Adapter<TeamDiscoverAdapte
         CardView cardViewItem;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             cardViewItem                                                        =   itemView.findViewById(R.id.itemlist_cardview);
             imageViewThumbnail                                                  =   itemView.findViewById(R.id.itemlist_imageview_thumbnail);
             textViewTeamTitle                                                   =   itemView.findViewById(R.id.itemlist_team_title);

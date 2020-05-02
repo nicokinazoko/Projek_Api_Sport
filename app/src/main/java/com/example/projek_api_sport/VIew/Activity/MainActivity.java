@@ -1,14 +1,14 @@
 package com.example.projek_api_sport.VIew.Activity;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.example.projek_api_sport.VIew.Fragment.PersonFragment;
 import com.example.projek_api_sport.R;
+import com.example.projek_api_sport.VIew.Fragment.PersonFragment;
 import com.example.projek_api_sport.VIew.Fragment.TeamFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         //agar bisa di klik bottom nav nya
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+        loadFragment(selectedFragment);
     }
 
     @Override

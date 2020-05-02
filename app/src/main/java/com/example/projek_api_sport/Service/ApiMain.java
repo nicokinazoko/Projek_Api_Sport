@@ -9,7 +9,7 @@ public class ApiMain {
 
     public TeamRepository getApiTeam()
     {
-        String BASE_URL                                     =   "https://www.thesportsdb.com/api/v1/json/1/";
+        String BASE_URL                                     =   "https://www.thesportsdb.com/";
         if(retrofit == null)
         {
             retrofit                                        =

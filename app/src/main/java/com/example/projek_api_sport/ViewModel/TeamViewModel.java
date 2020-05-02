@@ -1,5 +1,7 @@
 package com.example.projek_api_sport.ViewModel;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -41,7 +43,8 @@ public class TeamViewModel extends ViewModel {
 
             @Override
             public void onFailure(Call<TeamDiscoverResponse> call, Throwable t) {
-
+                t.getMessage();
+                Log.e("Error", t.getMessage());
             }
         });
     }

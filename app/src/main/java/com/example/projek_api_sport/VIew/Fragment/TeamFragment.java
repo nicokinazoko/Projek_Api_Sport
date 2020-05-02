@@ -70,6 +70,7 @@ public class TeamFragment extends Fragment {
             {
                 teamDiscoverAdapter.setData(teamsDiscoverResultItems);
 
+
             }
         }
     };
