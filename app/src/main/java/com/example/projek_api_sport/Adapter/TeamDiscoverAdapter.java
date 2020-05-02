@@ -29,7 +29,7 @@ public class TeamDiscoverAdapter extends RecyclerView.Adapter<TeamDiscoverAdapte
         this.context = context;
     }
 
-    private void setData(ArrayList<TeamsDiscoverResultItem> items)
+    public void setData(ArrayList<TeamsDiscoverResultItem> items)
     {
         teamsDiscoverResultItems.clear();
         teamsDiscoverResultItems.addAll(items);

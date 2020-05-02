@@ -2,18 +2,18 @@ package com.example.projek_api_sport.Model.Team;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class TeamDiscoverResponse{
 
 	@SerializedName("teams")
-	private List<TeamsDiscoverResultItem> teams;
+	private ArrayList<TeamsDiscoverResultItem> teams;
 
-	public void setTeams(List<TeamsDiscoverResultItem> teams){
+	public void setTeams(ArrayList<TeamsDiscoverResultItem> teams){
 		this.teams = teams;
 	}
 
-	public List<TeamsDiscoverResultItem> getTeams(){
+	public ArrayList<TeamsDiscoverResultItem> getTeams(){
 		return teams;
 	}
 
