@@ -54,7 +54,7 @@ public class TeamDiscoverAdapter extends RecyclerView.Adapter<TeamDiscoverAdapte
 
         holder.textViewTeamTitle.setText(teamsDiscoverResultItems.get(position).getStrTeam().toString());
 
-        holder.textViewTeamAbb.setText(teamsDiscoverResultItems.get(position).getStrTeamShort().toString());
+        holder.textViewTeamAbb.setText(teamsDiscoverResultItems.get(position).getStrAlternate());
     }
 
     @Override

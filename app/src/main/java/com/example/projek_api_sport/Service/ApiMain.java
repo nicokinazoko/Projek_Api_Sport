@@ -22,8 +22,20 @@ public class ApiMain {
         return retrofit.create(TeamRepository.class);
     }
 
-//    public PersonRepository getApiTeam()
-//    {
-//
-//    }
+
+    public PersonRepository getApiSport()
+    {
+        String BASE_URL                                     =   "https://www.thesportsdb.com/";
+        if(retrofit == null)
+        {
+            retrofit                                        =
+                    new Retrofit
+                            .Builder()
+                            .baseUrl(BASE_URL)
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .build();
+        }
+
+        return retrofit.create(PersonRepository.class);
+    }
 }

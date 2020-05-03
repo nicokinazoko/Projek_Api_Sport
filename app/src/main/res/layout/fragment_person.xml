@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".VIew.Fragment.PersonFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragmem_person_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ini Fragment Person"
-        android:textSize="40sp"/>
+        tools:listitem="@layout/item_list"/>
 
 </FrameLayout>

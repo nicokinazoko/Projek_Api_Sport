@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/menu_bottomnav_team"
-        android:title="Team"
+        android:title="Football Team"
         android:icon="@drawable/soccer_ball"
         app:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/menu_bottomnav_person"
-        android:title="Person"
-        android:icon="@drawable/person"
+        android:title="Sport"
+        android:icon="@drawable/ic_call_to_action_black_24dp"
         app:showAsAction="ifRoom"/>
 </menu>
